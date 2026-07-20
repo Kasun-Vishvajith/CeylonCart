@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useMemo } from 'react';
+import Link from 'next/link';
 import products from '@/data/products.json';
 import ProductCard from '@/components/ProductCard';
 import CategoryFilter from '@/components/CategoryFilter';
@@ -21,6 +22,20 @@ export default function CataloguePage() {
     return list;
   }, [activeCategory, searchQuery]);
 
+  const catalogueStats = useMemo(() => {
+    const totalProducts = products.length;
+    const totalCategories = new Set(products.map((item) => item.category)).size;
+    const averagePrice = Math.round(
+      products.reduce((sum, item) => sum + item.price, 0) / totalProducts
+    );
+
+    return {
+      totalProducts,
+      totalCategories,
+      averagePrice,
+    };
+  }, []);
+
   return (
     <div className="page-main">
       <div className="page-container">
@@ -34,6 +49,32 @@ export default function CataloguePage() {
             Hand-picked teas, spices, handicrafts and apparel — sourced directly
             from artisans across the island.
           </p>
+
+          <div className="catalogue-highlights">
+            <div className="catalogue-highlight-card">
+              <span className="catalogue-highlight-label">Products</span>
+              <strong className="catalogue-highlight-value">{catalogueStats.totalProducts}</strong>
+            </div>
+            <div className="catalogue-highlight-card">
+              <span className="catalogue-highlight-label">Categories</span>
+              <strong className="catalogue-highlight-value">{catalogueStats.totalCategories}</strong>
+            </div>
+            <div className="catalogue-highlight-card">
+              <span className="catalogue-highlight-label">Avg. Price</span>
+              <strong className="catalogue-highlight-value">
+                LKR {catalogueStats.averagePrice.toLocaleString()}
+              </strong>
+            </div>
+          </div>
+
+          <div className="catalogue-quick-actions">
+            <Link href="/cart" className="btn btn-terra">
+              View Cart
+            </Link>
+            <Link href="/login" className="btn btn-outline">
+              Sign In for Faster Checkout
+            </Link>
+          </div>
         </div>
 
         {/* ── Search ── */}
