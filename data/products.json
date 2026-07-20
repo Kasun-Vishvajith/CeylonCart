@@ -1,0 +1,82 @@
+[
+  {
+    "id": "ceylon-black-tea-250g",
+    "name": "Ceylon Black Tea (250g)",
+    "category": "Tea",
+    "price": 850,
+    "image": "/images/black-tea.png",
+    "description": "High-grown Ceylon black tea, whole leaf. Sourced from the misty highlands of Sri Lanka for a rich, full-bodied cup."
+  },
+  {
+    "id": "green-tea-lemongrass",
+    "name": "Green Tea with Lemongrass",
+    "category": "Tea",
+    "price": 950,
+    "image": "/images/green-tea.png",
+    "description": "Blended green tea with lemongrass and citrus notes. A refreshing and aromatic infusion perfect for any time of day."
+  },
+  {
+    "id": "cinnamon-sticks-100g",
+    "name": "Cinnamon Sticks (100g)",
+    "category": "Spices",
+    "price": 620,
+    "image": "/images/cinnamon-sticks.png",
+    "description": "True Ceylon cinnamon, sun-dried. Delicate, sweet, and aromatic — the finest variety of cinnamon in the world."
+  },
+  {
+    "id": "cardamom-pods-50g",
+    "name": "Cardamom Pods (50g)",
+    "category": "Spices",
+    "price": 780,
+    "image": "/images/cardamom-pods.png",
+    "description": "Whole green cardamom pods. Intensely fragrant with a warm, spicy-sweet flavour essential to Sri Lankan cuisine."
+  },
+  {
+    "id": "black-pepper-100g",
+    "name": "Black Pepper (100g)",
+    "category": "Spices",
+    "price": 540,
+    "image": "/images/black-pepper.png",
+    "description": "Wild-harvested Ceylon black pepper. Bold pungency and complex heat, hand-picked from Sri Lankan forest gardens."
+  },
+  {
+    "id": "handwoven-reed-basket",
+    "name": "Handwoven Reed Basket",
+    "category": "Handicrafts",
+    "price": 2400,
+    "image": "/images/reed-basket.png",
+    "description": "Traditional handwoven basket from Sri Lankan reed. Each piece is unique, crafted by skilled artisans in the Walawe region."
+  },
+  {
+    "id": "batik-wall-hanging",
+    "name": "Batik Wall Hanging",
+    "category": "Handicrafts",
+    "price": 3200,
+    "image": "/images/batik-hanging.png",
+    "description": "Hand-dyed batik fabric wall art. Vivid patterns inspired by traditional Sri Lankan motifs and natural dye techniques."
+  },
+  {
+    "id": "wooden-elephant-carving",
+    "name": "Wooden Elephant Carving",
+    "category": "Handicrafts",
+    "price": 1800,
+    "image": "/images/wooden-elephant.png",
+    "description": "Hand-carved teakwood elephant figurine. A symbol of strength and wisdom, meticulously detailed by Kandy craftsmen."
+  },
+  {
+    "id": "handloom-cotton-sarong",
+    "name": "Handloom Cotton Sarong",
+    "category": "Apparel",
+    "price": 1500,
+    "image": "/images/cotton-sarong.png",
+    "description": "Traditional handloom cotton sarong. Lightweight, breathable, and woven in time-honoured patterns from coastal Sri Lanka."
+  },
+  {
+    "id": "batik-cotton-shirt",
+    "name": "Batik Cotton Shirt",
+    "category": "Apparel",
+    "price": 2600,
+    "image": "/images/batik-shirt.png",
+    "description": "Batik-printed cotton shirt, unisex. Vibrant hand-applied batik patterns on a relaxed-fit 100% cotton garment."
+  }
+]
